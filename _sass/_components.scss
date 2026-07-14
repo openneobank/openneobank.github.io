@@ -71,6 +71,10 @@
   .nav__actions .btn { display: inline-flex; }
 }
 
+/* Used when the nav has no hamburger/sheet to fall back on (e.g. the
+   minimal coming-soon nav) — keep actions visible at every width. */
+.nav__actions--static .btn { display: inline-flex; }
+
 .nav__toggle {
   display: grid;
   place-items: center;
@@ -176,6 +180,25 @@
 .hero__actions { display: flex; flex-wrap: wrap; gap: 0.9rem; align-items: center; margin-top: var(--space-1); }
 
 .hero__note { font-size: 0.82rem; color: var(--mist); }
+
+/* Minimal "coming soon" hero: single centered column, no card mockup */
+.hero--minimal {
+  min-height: calc(100svh - 4.6rem);
+  display: flex;
+  align-items: center;
+  padding-block: var(--space-5);
+}
+
+.hero__copy--centered {
+  align-items: center;
+  text-align: center;
+  max-width: 42rem;
+  margin-inline: auto;
+}
+
+.lede--centered { max-width: 42ch; margin-inline: auto; }
+
+.hero__actions--centered { justify-content: center; }
 
 /* Signature element: the account card, flat and precise, no blur */
 .card-stage {
@@ -542,6 +565,21 @@
 @media (min-width: 720px) {
   .footer__top { flex-direction: row; justify-content: space-between; }
 }
+
+.footer__top--minimal { align-items: center; }
+
+.footer__links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+}
+
+.footer__links a {
+  font-size: 0.9rem;
+  color: var(--ink-soft);
+  transition: color 0.2s var(--ease-out);
+}
+.footer__links a:hover { color: var(--ink); }
 
 .footer__cols {
   display: grid;

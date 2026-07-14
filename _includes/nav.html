@@ -4,26 +4,7 @@
     Open Neobank
   </a>
 
-  <ul class="nav__links">
-    <li><a href="{{ '/' | relative_url }}#features">Features</a></li>
-    <li><a href="{{ '/' | relative_url }}#how-it-works">How it works</a></li>
-    <li><a href="{{ '/' | relative_url }}#security">Security</a></li>
-    <li><a href="{{ '/' | relative_url }}#faq">FAQ</a></li>
-  </ul>
-
-  <div class="nav__actions">
+  <div class="nav__actions nav__actions--static">
     <a href="{{ site.github }}" class="btn btn--ghost btn--sm">View on GitHub</a>
-    <a href="{{ '/' | relative_url }}#get-started" class="btn btn--primary btn--sm">Get started free</a>
-    <button class="nav__toggle" id="navToggle" aria-expanded="false" aria-controls="navSheet" aria-label="Toggle menu">
-      <span></span>
-    </button>
   </div>
 </nav>
-
-<div class="nav__sheet panel" id="navSheet" data-open="false">
-  <a href="{{ '/' | relative_url }}#features">Features</a>
-  <a href="{{ '/' | relative_url }}#how-it-works">How it works</a>
-  <a href="{{ '/' | relative_url }}#security">Security</a>
-  <a href="{{ '/' | relative_url }}#faq">FAQ</a>
-  <a href="{{ '/' | relative_url }}#get-started" class="btn btn--primary btn--sm" style="margin-top: 0.4rem;">Get started free</a>
-</div>

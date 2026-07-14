@@ -1,0 +1,39 @@
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer__top">
+      <div class="hero__copy" style="gap: 0.6rem;">
+        <a href="{{ '/' | relative_url }}" class="nav__logo">
+          {% include logo-mark.html %}
+          Open Neobank
+        </a>
+        <p class="lede" style="max-width: 32ch; font-size: 0.9rem;">Banking infrastructure, held to the light. Free, open-source, and yours to run.</p>
+      </div>
+
+      <div class="footer__cols">
+        <div class="footer__col">
+          <p class="footer__col-title">Project</p>
+          <a href="{{ '/' | relative_url }}#features">Features</a>
+          <a href="{{ '/' | relative_url }}#how-it-works">How it works</a>
+          <a href="{{ '/' | relative_url }}#security">Security</a>
+        </div>
+        <div class="footer__col">
+          <p class="footer__col-title">Resources</p>
+          <a href="{{ site.github }}">Documentation</a>
+          <a href="{{ site.github }}">GitHub</a>
+          <a href="{{ '/' | relative_url }}#faq">FAQ</a>
+        </div>
+        <div class="footer__col">
+          <p class="footer__col-title">Legal</p>
+          <a href="{{ site.license_url }}">MIT license</a>
+          <a href="{{ '/privacy/' | relative_url }}">Privacy</a>
+          <a href="{{ '/terms/' | relative_url }}">Terms</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <span>&copy; 2022–{{ 'now' | date: "%Y" }} Open Neobank. Open-source core banking software, MIT licensed.</span>
+      <span>Built in the open, with Jekyll.</span>
+    </div>
+  </div>
+</footer>

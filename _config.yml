@@ -7,7 +7,7 @@ description: >-
 url: "https://openneobank.io"
 baseurl: ""
 
-github: "https://github.com/openneobank/openneobank"
+github: "https://github.com/openneobank"
 github_org: "https://github.com/openneobank"
 license_url: "https://github.com/openneobank/openneobank/blob/main/LICENSE"
 
