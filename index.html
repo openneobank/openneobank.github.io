@@ -1,0 +1,219 @@
+---
+layout: default
+title: Open-source core banking software
+---
+
+<section class="hero">
+  <div class="hero__device hero__device--fill" aria-hidden="true"></div>
+  <div class="hero__device hero__device--ring" aria-hidden="true"></div>
+  <div class="wrap grid-2">
+    <div class="hero__copy" data-reveal>
+      <span class="eyebrow">Open source · MIT licensed</span>
+      <h1>Banking infrastructure,<br>held to the <em>light</em>.</h1>
+      <p class="lede">Open Neobank is free, open-source core banking software. Clone the repo, run it on your own infrastructure, and launch your own bank — without building the ledger, payments, and compliance plumbing from scratch.</p>
+      <div class="hero__actions">
+        <a href="#get-started" class="btn btn--primary">Get started free</a>
+        <a href="#how-it-works" class="btn btn--ghost">See how it works</a>
+      </div>
+      <span class="hero__note">MIT licensed · Self-hosted or cloud · No vendor lock-in</span>
+    </div>
+
+    <div data-reveal>
+      <div class="card-stage">
+        <div class="bank-card" id="bankCard">
+          <div class="bank-card__row-top">
+            <div class="bank-card__chip"></div>
+            <span class="bank-card__brand">Your Bank, Inc.</span>
+          </div>
+          <div>
+            <div class="bank-card__balance-label">Available balance</div>
+            <div class="bank-card__balance"><span class="mono-figure" data-counter data-target="12480.32">$0.00</span></div>
+          </div>
+          <div class="bank-card__row-bottom">
+            <span class="bank-card__number">•••• •••• •••• 0417</span>
+            <span class="bank-card__mint">Live</span>
+          </div>
+        </div>
+      </div>
+      <div class="card-stage__ledger">
+        <span class="ledger-tick"><strong>+$240.00</strong> payroll · today</span>
+        <span class="ledger-tick"><strong>−$18.50</strong> transfer · 2m ago</span>
+      </div>
+      <p class="hero__note text-center" style="margin-top: 0.9rem;">Live preview — the exact account UI shipped in the repo, ready to white-label.</p>
+    </div>
+  </div>
+
+  <div class="wrap">
+    <div class="trust" data-reveal>
+      <div class="trust__item">
+        <span class="trust__value mono-figure">$0</span>
+        <span class="trust__label">Free & open source</span>
+      </div>
+      <div class="trust__item">
+        <span class="trust__value mono-figure">MIT</span>
+        <span class="trust__label">License, no royalties</span>
+      </div>
+      <div class="trust__item">
+        <span class="trust__value mono-figure">100%</span>
+        <span class="trust__label">Source visible, no black box</span>
+      </div>
+      <div class="trust__item">
+        <span class="trust__value mono-figure">Self-host</span>
+        <span class="trust__label">Or run on our cloud</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="features">
+  <div class="wrap">
+    <div class="section-head" data-reveal>
+      <span class="eyebrow">What's in the repo</span>
+      <h2>Everything you need to run a bank, none of it locked away.</h2>
+    </div>
+
+    <div class="grid-4" data-reveal-group>
+      <div class="feature-card panel" data-reveal style="--i: 0">
+        <div class="feature-card__icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M4 12h13M17 12l-4-4M17 12l-4 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+        <h3>Core ledger engine</h3>
+        <p>A double-entry ledger built for real money — multi-currency accounts, instant internal transfers, and balances that never drift.</p>
+      </div>
+
+      <div class="feature-card panel" data-reveal style="--i: 1">
+        <div class="feature-card__icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M4 20V10M12 20V4M20 20v-7" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+        </div>
+        <h3>Payments & rails</h3>
+        <p>Adapters for card networks, ACH/SEPA, and instant payment rails, so you plug in providers instead of writing settlement code.</p>
+      </div>
+
+      <div class="feature-card panel" data-reveal style="--i: 2">
+        <div class="feature-card__icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="8.2" stroke="currentColor" stroke-width="1.8"/><path d="M12 3.8c-2.4 2.3-3.6 5.2-3.6 8.2s1.2 5.9 3.6 8.2c2.4-2.3 3.6-5.2 3.6-8.2S14.4 6.1 12 3.8Z" stroke="currentColor" stroke-width="1.8"/></svg>
+        </div>
+        <h3>Compliance building blocks</h3>
+        <p>KYC/AML hooks, configurable limits, and immutable audit trails you can wire up to the providers your jurisdiction requires.</p>
+      </div>
+
+      <div class="feature-card panel" data-reveal style="--i: 3">
+        <div class="feature-card__icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M12 3l7 3v5c0 4.5-3 7.9-7 9-4-1.1-7-4.5-7-9V6l7-3Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
+        </div>
+        <h3>White-label app</h3>
+        <p>The account UI on this page ships in the repo — restyle it, rebrand it, and put it in front of your customers as your own.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="how-it-works">
+  <div class="wrap">
+    <div class="section-head" data-reveal>
+      <span class="eyebrow">How it works</span>
+      <h2>From clone to launch, without a vendor in between.</h2>
+    </div>
+
+    <div class="steps" data-reveal-group>
+      <div class="step panel" data-reveal style="--i: 0">
+        <span class="step__index">Clone</span>
+        <h3>Get the code, free forever</h3>
+        <p>Clone the repository and run it locally in minutes — no license fees, no sales call, no seat limits.</p>
+      </div>
+      <div class="step panel" data-reveal style="--i: 1">
+        <span class="step__index">Configure</span>
+        <h3>Wire it to your world</h3>
+        <p>Connect your ledger to the payment rails, compliance providers, and branding your market actually needs.</p>
+      </div>
+      <div class="step panel" data-reveal style="--i: 2">
+        <span class="step__index">Launch</span>
+        <h3>Self-host or deploy to the cloud</h3>
+        <p>Run it on your own infrastructure for full control, or deploy to our managed cloud — same open-source core either way.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="security">
+  <div class="wrap">
+    <div class="security panel" data-reveal>
+      <div>
+        <span class="eyebrow">Security</span>
+        <h2 style="margin-top: 0.6rem;">Nothing hidden. Nothing left to chance.</h2>
+        <div class="security__list">
+          <div class="security__row">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M12 3l7 3v5c0 4.5-3 7.9-7 9-4-1.1-7-4.5-7-9V6l7-3Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
+            <div>
+              <h3>Encrypted, always</h3>
+              <p>Data is encrypted in transit and at rest by default — no exceptions, no shortcuts, no extra config to remember.</p>
+            </div>
+          </div>
+          <div class="security__row">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M4 12h16M4 6h16M4 18h10" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+            <div>
+              <h3>Self-hosted, self-owned</h3>
+              <p>Run it on your own infrastructure and your customers' data never has to leave it. There's no black box to trust.</p>
+            </div>
+          </div>
+          <div class="security__row">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M9 12l2 2 4-4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.8"/></svg>
+            <div>
+              <h3>Audit trails, built in</h3>
+              <p>Every ledger entry is immutable and exportable — ready for the auditors and regulators your market requires.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="security__orb" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none"><path d="M12 3l7 3v5c0 4.5-3 7.9-7 9-4-1.1-7-4.5-7-9V6l7-3Z" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/><path d="M9 12l2 2 4-4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="faq">
+  <div class="wrap">
+    <div class="section-head" data-reveal>
+      <span class="eyebrow">FAQ</span>
+      <h2>Questions worth answering upfront.</h2>
+    </div>
+
+    <div class="faq-list" data-reveal-group>
+      <details class="faq-item panel" data-reveal style="--i: 0">
+        <summary>Is Open Neobank a licensed bank?</summary>
+        <p>No — Open Neobank is open-source software, not a chartered bank. It gives you the ledger, payments, and compliance plumbing to run on top of a banking license you hold yourself, or through a licensed partner. Think of it as the technology layer, not the legal one.</p>
+      </details>
+      <details class="faq-item panel" data-reveal style="--i: 1">
+        <summary>What license is the code under?</summary>
+        <p>MIT. Use it commercially or non-commercially, modify it, white-label it — no royalties and no usage caps.</p>
+      </details>
+      <details class="faq-item panel" data-reveal style="--i: 2">
+        <summary>Can I customize it for my market?</summary>
+        <p>Yes. Fork the repo, theme the app, and extend the ledger or payment adapters to match the currencies, rails, and rules your market needs.</p>
+      </details>
+      <details class="faq-item panel" data-reveal style="--i: 3">
+        <summary>Do I have to self-host it?</summary>
+        <p>No. Self-host on your own infrastructure for full control, or run the same open-source core on our managed cloud if you'd rather not operate servers.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<section id="get-started">
+  <div class="wrap">
+    <div class="cta-panel panel" data-reveal>
+      <span class="eyebrow">Get started</span>
+      <h2>Clone it. Configure it. Launch your bank.</h2>
+      <p class="lede">Open Neobank is free and open source under the MIT license — no waitlist required to start reading the code.</p>
+
+      <pre class="code-block mono-figure" aria-label="Clone command"><code>$ git clone {{ site.github }}.git
+$ cd openneobank &amp;&amp; ./bin/setup</code></pre>
+
+      <div class="hero__actions" style="justify-content: center;">
+        <a href="{{ site.github }}" class="btn btn--primary">View on GitHub</a>
+        <a href="{{ site.github }}" class="btn btn--ghost">Read the docs</a>
+      </div>
+    </div>
+  </div>
+</section>

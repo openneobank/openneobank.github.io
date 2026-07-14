@@ -1,0 +1,27 @@
+title: Open Neobank
+tagline: Banking infrastructure, held to the light.
+description: >-
+  Open Neobank is free, open-source core banking software. Clone it, run it
+  on your own infrastructure, and launch your own bank without building
+  the ledger, payments, and compliance plumbing from scratch.
+url: "https://openneobank.io"
+baseurl: ""
+
+github: "https://github.com/openneobank/openneobank"
+github_org: "https://github.com/openneobank"
+license_url: "https://github.com/openneobank/openneobank/blob/main/LICENSE"
+
+lang: en
+
+plugins:
+  - jekyll-sitemap
+
+sass:
+  style: compressed
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - node_modules/
+  - vendor/

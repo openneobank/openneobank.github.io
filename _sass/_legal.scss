@@ -1,0 +1,86 @@
+/* ---------------------------------------------------
+   Legal pages (Privacy, Terms)
+--------------------------------------------------- */
+.legal-hero {
+  padding-top: var(--space-6);
+  padding-bottom: var(--space-3);
+}
+
+.legal-hero__meta {
+  margin-top: var(--space-2);
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  color: var(--mist);
+}
+
+.legal-body {
+  padding: var(--space-4);
+  max-width: 68ch;
+  margin-inline: auto;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+@media (min-width: 720px) {
+  .legal-body { padding: var(--space-5); }
+}
+
+.legal-body__note {
+  padding: 0.9rem 1.1rem;
+  border-radius: var(--radius-sm);
+  background: rgba(253, 184, 19, 0.08);
+  border: 1px solid rgba(253, 184, 19, 0.3);
+  color: var(--ink-soft);
+  font-size: 0.88rem;
+}
+
+.legal-section h2 {
+  font-size: 1.3rem;
+  margin-bottom: 0.7rem;
+  scroll-margin-top: 6rem;
+}
+
+.legal-section p,
+.legal-section li {
+  color: var(--ink-soft);
+  font-size: 0.95rem;
+  line-height: 1.7;
+}
+
+.legal-section p + p { margin-top: 0.8rem; }
+
+.legal-section ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-top: 0.6rem;
+  padding-left: 1.2rem;
+}
+
+.legal-section li { list-style: disc; }
+.legal-section li::marker { color: var(--brand); }
+
+.legal-section a {
+  color: var(--brand-text);
+  text-decoration: underline;
+  text-decoration-color: rgba(138, 90, 0, 0.35);
+  text-underline-offset: 2px;
+  transition: text-decoration-color 0.2s var(--ease-out);
+}
+.legal-section a:hover { text-decoration-color: var(--brand-text); }
+
+.legal-section + .legal-section {
+  padding-top: var(--space-3);
+  border-top: 1px solid var(--line);
+}
+
+.legal-back {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-family: var(--font-mono);
+  font-size: 0.82rem;
+  color: var(--mist);
+}
+.legal-back:hover { color: var(--ink); }

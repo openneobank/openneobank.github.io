@@ -1,0 +1,89 @@
+.wrap {
+  width: 100%;
+  max-width: 1180px;
+  margin-inline: auto;
+  padding-inline: var(--space-3);
+}
+
+@media (min-width: 640px) {
+  .wrap { padding-inline: var(--space-4); }
+}
+
+section {
+  position: relative;
+  padding-block: var(--space-6);
+}
+
+/* Alternating light bands for rhythm instead of a single dark canvas */
+#features, #security, #get-started {
+  background: var(--paper-dim);
+}
+
+/* Precise, flat brand circles bleeding off the hero edge — the mark's
+   circle language echoed at large scale, no blur */
+.hero {
+  overflow: hidden;
+}
+
+.hero__device {
+  position: absolute;
+  z-index: -1;
+  pointer-events: none;
+}
+
+.hero__device--fill {
+  top: -18vw;
+  right: -14vw;
+  width: 46vw;
+  height: 46vw;
+  min-width: 320px;
+  min-height: 320px;
+  border-radius: 50%;
+  background: var(--brand);
+  opacity: 0.14;
+}
+
+.hero__device--ring {
+  bottom: -16vw;
+  left: -12vw;
+  width: 28vw;
+  height: 28vw;
+  min-width: 200px;
+  min-height: 200px;
+  border-radius: 50%;
+  border: 1.5px solid var(--line-strong);
+}
+
+.grid-2 {
+  display: grid;
+  gap: var(--space-3);
+  grid-template-columns: 1fr;
+}
+
+.grid-4 {
+  display: grid;
+  gap: var(--space-3);
+  grid-template-columns: repeat(2, 1fr);
+}
+
+@media (min-width: 720px) {
+  .grid-2 { grid-template-columns: 1.05fr 0.95fr; align-items: center; gap: var(--space-5); }
+}
+
+@media (min-width: 900px) {
+  .grid-4 { grid-template-columns: repeat(4, 1fr); }
+}
+
+@media (max-width: 480px) {
+  .grid-4 { grid-template-columns: 1fr; }
+}
+
+.section-head {
+  max-width: 46ch;
+  margin-bottom: var(--space-4);
+}
+
+.section-head + .grid-4,
+.section-head + .steps {
+  margin-top: var(--space-4);
+}
